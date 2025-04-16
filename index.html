@@ -17,16 +17,16 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#about">Sobre mim</a>
+            <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#skills">Ferramentas</a>
+            <a class="nav-link" href="#skills">Tools</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#projects">Projetos</a>
+            <a class="nav-link" href="#projects">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">Contato</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -40,10 +40,11 @@
         </div>
         <div class="col-md-7">
           <h5 class="text-end">
-            Olá! Me chamo Angelo.<br><br>
-            Desenvolvedor de Software focado na criação de aplicações Ruby on Rails e integrações de APIs REST, 
-            aplicando desenvolvimento orientado à testes (TDD) e trazendo código de qualidade, seguro e funcional.
+            Hello! My name is Angelo Maia.<br><br>
           </h5>
+          <p class="text-end">
+            I am a Software Developer currently working with <strong>Ruby on Rails</strong> in full-stack applications.
+          </p>
         </div>
         <div class="col-md-3">
           <img src="assets/me2.png" alt="Description of image" class="img-fluid">
@@ -54,42 +55,112 @@
     </div>
   </section>
 
-  <section id="skills" class="bg-white">
+  <section id="skills" class="bg-white py-5">
     <div class="container">
-      <h2 class="text-center">Ferramentas</h2>
-      <h6 class="text-start">
-        <br>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum tempor scelerisque. In pretium id nibh id scelerisque. Mauris id velit arcu. Curabitur bibendum nisl et tempus feugiat. Morbi hendrerit nunc ac orci tincidunt vulputate. Integer ultrices ornare mi non molestie. Vivamus ac ligula felis. Etiam id metus urna.
-        <br>
-        Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse vitae turpis pellentesque lorem bibendum iaculis nec at orci. Ut vel augue nunc. Aliquam quis risus maximus metus eleifend tempor ac ut lorem. Mauris ultrices non sapien bibendum ornare. Cras sodales lobortis erat, dictum tincidunt leo ultrices in. Aenean et dolor neque. Vestibulum condimentum, quam id elementum ornare, leo lectus varius ipsum, et gravida nibh velit at elit. In euismod dui id blandit finibus. Nunc varius sodales lectus nec ornare.
-        <br>
-      </h6>
+      <h2 class="text-center mb-4">Tools</h2>
+      <div class="row justify-content-center text-center">
+        <div class="col-md-2 col-4 mb-4">
+          <img src="assets/ruby.png" alt="Ruby" class="tool-icon">
+        </div>
+        <div class="col-md-2 col-4 mb-4">
+          <img src="assets/rails.png" alt="Rails" class="tool-icon">
+        </div>
+        <div class="col-md-2 col-4 mb-4">
+          <img src="assets/react.png" alt="React" class="tool-icon">
+        </div>
+      </div>
     </div>
   </section>
+  
 
-  <section id="projects" class="bg-light">
+  <section id="projects" class="bg-light py-5">
     <div class="container">
-      <h2 class="text-center">Projetos</h2>
-      <h6 class="text-end">
-        <br>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum tempor scelerisque. In pretium id nibh id scelerisque. Mauris id velit arcu. Curabitur bibendum nisl et tempus feugiat. Morbi hendrerit nunc ac orci tincidunt vulputate. Integer ultrices ornare mi non molestie. Vivamus ac ligula felis. Etiam id metus urna.
-        <br>
-        Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse vitae turpis pellentesque lorem bibendum iaculis nec at orci. Ut vel augue nunc. Aliquam quis risus maximus metus eleifend tempor ac ut lorem. Mauris ultrices non sapien bibendum ornare. Cras sodales lobortis erat, dictum tincidunt leo ultrices in. Aenean et dolor neque. Vestibulum condimentum, quam id elementum ornare, leo lectus varius ipsum, et gravida nibh velit at elit. In euismod dui id blandit finibus. Nunc varius sodales lectus nec ornare.
-        <br>
-      </h6>
+      <h2 class="text-center mb-4">Projects</h2>
+
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <a href="https://github.com/angelomaia/cade-buffet" target="_blank">
+            <div class="card h-100">
+              <img src="assets/cadebuffet.png" class="card-img-top" alt="Project 1">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">CadêBuffet?</h5>
+              <p class="card-text">Developed during the individual phase of TreinaDev by
+                Campus Code, CadêBuffet is a web application designed to connect potential clients with
+                companies that offer buffet services. The system includes several features, such as
+                company and user registration, listing and creation of buffets and event types, as well as a
+                scheduling system with pricing, chat functionality, and customer reviews. 
+                <br><br>
+                It was built
+                using Ruby on Rails, Bootstrap, and JavaScript, following Test-Driven Development
+                practices and automated testing with RSpec and Capybara.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <a href="https://github.com/TreinaDev/pague-aluguel" target="_blank">
+            <div class="card h-100">
+              <img src="assets/paguealuguel.png" class="card-img-top" alt="Project 2">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">PagueAluguel</h5>
+              <p class="card-text">Developed during the Team Experience phase of
+                TreinaDev by Campus Code, PagueAluguel is one of two applications that together form a
+                connected system via API integration. It consumes data from the CondoMinions application
+                and functions as a payment management system for condominiums. Features include the
+                registration of shared utility bills, condominium fees, one-time charges, and rental
+                agreements—ultimately generating invoices for residents of the managed buildings. 
+                <br><br>
+                Built with Ruby on Rails, Bootstrap, Stimulus.js, JavaScript, RuboCop, SimpleCov, and
+                asynchronous background jobs. The project followed Test-Driven Development practices
+                and includes automated tests using RSpec and Capybara.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-md-6 mb-4">
+          <a href="https://github.com/angelomaia/rebase-labs" target="_blank">
+            <div class="card h-100">
+              <img src="assets/relabs.png" class="card-img-top" alt="Project 3">
+          </a>
+            <div class="card-body">
+              <h5 class="card-title">Rebase Labs</h5>
+              <p class="card-text">Developed during the job interview process for Rebase, this project
+                consisted in a lightweight Ruby application using Sinatra. It is a dockerized system with
+                back-end, front-end, and database services. The app is built to handle data related to
+                patients, doctors, and exam results. It has an endpoint to receive the upload of csv files,
+                and a structured interface to show the exam results with pagination and search results by
+                exam token. The upload system has validation of file format and data structure. 
+                <br><br>
+                The overall aim of this project was to test whether the applicants had the ability to adapt to an
+                unknown framework and do the job within a limited timeframe.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
     </div>
   </section>
+  
 
   <section id="contact" class="bg-white">
     <div class="container">
-      <h2 class="text-center">Contato</h2>
+      <h2 class="text-center">Contact</h2>
       <h6 class="text-center">
         <br>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum tempor scelerisque. In pretium id nibh id scelerisque. Mauris id velit arcu. Curabitur bibendum nisl et tempus feugiat. Morbi hendrerit nunc ac orci tincidunt vulputate. Integer ultrices ornare mi non molestie. Vivamus ac ligula felis. Etiam id metus urna.
-        <br>
-        Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse vitae turpis pellentesque lorem bibendum iaculis nec at orci. Ut vel augue nunc. Aliquam quis risus maximus metus eleifend tempor ac ut lorem. Mauris ultrices non sapien bibendum ornare. Cras sodales lobortis erat, dictum tincidunt leo ultrices in. Aenean et dolor neque. Vestibulum condimentum, quam id elementum ornare, leo lectus varius ipsum, et gravida nibh velit at elit. In euismod dui id blandit finibus. Nunc varius sodales lectus nec ornare.
-        <br>
+        request.angelo@gmail.com
       </h6>
+      <div class="text-center">
+        <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="https://www.linkedin.com/in/angelo-jamil-maia/" role="button">
+          <img src="icons/linkedin.svg" alt="LinkedIn" style="width: 32px; height: 32px">
+        </a>
+    
+        <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="https://github.com/angelomaia" role="button">
+          <img src="icons/github.svg" alt="GitHub" style="width: 32px; height: 32px">
+        </a>
+      </div>
     </div>
   </section>
 
