@@ -1,16 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>-</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Angelo Maia</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <h1>Temporarily offline.</h1>
-  <script src="scripts.js"></script>
-</body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Angelo Maia</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Tools</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
+  <section id="about" class="bg-light py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-7">
+          <h5 class="text-end">
+            Hello! My name is Angelo Maia.<br><br>
+          </h5>
+          <p class="text-end">
+            I am a Software Developer currently working with <strong>Ruby on Rails</strong> in full-stack applications.
+          </p>
+        </div>
+        <div class="col-md-3">
+          <img src="assets/me2.png" alt="Description of image" class="img-fluid">
+        </div>
+        <div class="col-md-1">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="bg-white py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Tools</h2>
+      <div class="row justify-content-center text-center">
+        <div class="col-md-2 col-4 mb-4">
+          <img src="assets/ruby.png" alt="Ruby" class="tool-icon">
+        </div>
+        <div class="col-md-2 col-4 mb-4">
+          <img src="assets/rails.png" alt="Rails" class="tool-icon">
+        </div>
+        <div class="col-md-2 col-4 mb-4">
+          <img src="assets/react.png" alt="React" class="tool-icon">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="projects" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Projects</h2>
+
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <a href="https://github.com/angelomaia/cade-buffet" target="_blank">
+            <div class="card h-100">
+              <img src="assets/cadebuffet.png" class="card-img-top" alt="Project 1">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">CadêBuffet?</h5>
+              <p class="card-text">Developed during the individual phase of TreinaDev by
+                Campus Code, CadêBuffet is a web application designed to connect potential clients with
+                companies that offer buffet services. The system includes several features, such as
+                company and user registration, listing and creation of buffets and event types, as well as a
+                scheduling system with pricing, chat functionality, and customer reviews. 
+                <br><br>
+                It was built
+                using Ruby on Rails, Bootstrap, and JavaScript, following Test-Driven Development
+                practices and automated testing with RSpec and Capybara.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <a href="https://github.com/TreinaDev/pague-aluguel" target="_blank">
+            <div class="card h-100">
+              <img src="assets/paguealuguel.png" class="card-img-top" alt="Project 2">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">PagueAluguel</h5>
+              <p class="card-text">Developed during the Team Experience phase of
+                TreinaDev by Campus Code, PagueAluguel is one of two applications that together form a
+                connected system via API integration. It consumes data from the CondoMinions application
+                and functions as a payment management system for condominiums. Features include the
+                registration of shared utility bills, condominium fees, one-time charges, and rental
+                agreements—ultimately generating invoices for residents of the managed buildings. 
+                <br><br>
+                Built with Ruby on Rails, Bootstrap, Stimulus.js, JavaScript, RuboCop, SimpleCov, and
+                asynchronous background jobs. The project followed Test-Driven Development practices
+                and includes automated tests using RSpec and Capybara.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-md-6 mb-4">
+          <a href="https://github.com/angelomaia/rebase-labs" target="_blank">
+            <div class="card h-100">
+              <img src="assets/relabs.png" class="card-img-top" alt="Project 3">
+          </a>
+            <div class="card-body">
+              <h5 class="card-title">Rebase Labs</h5>
+              <p class="card-text">Developed during the job interview process for Rebase, this project
+                consisted in a lightweight Ruby application using Sinatra. It is a dockerized system with
+                back-end, front-end, and database services. The app is built to handle data related to
+                patients, doctors, and exam results. It has an endpoint to receive the upload of csv files,
+                and a structured interface to show the exam results with pagination and search results by
+                exam token. The upload system has validation of file format and data structure. 
+                <br><br>
+                The overall aim of this project was to test whether the applicants had the ability to adapt to an
+                unknown framework and do the job within a limited timeframe.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  
+
+  <section id="contact" class="bg-white">
+    <div class="container">
+      <h2 class="text-center">Contact</h2>
+      <h6 class="text-center">
+        <br>
+        request.angelo@gmail.com
+      </h6>
+      <div class="text-center">
+        <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="https://www.linkedin.com/in/angelo-jamil-maia/" role="button">
+          <img src="icons/linkedin.svg" alt="LinkedIn" style="width: 32px; height: 32px">
+        </a>
+    
+        <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="https://github.com/angelomaia" role="button">
+          <img src="icons/github.svg" alt="GitHub" style="width: 32px; height: 32px">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
 </html>
