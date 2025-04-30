@@ -3,15 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Angelo Maia</title>
+  <title>Angelo Maia | Software Developer</title>
   <link rel="icon" type="image/svg+xml" href="icons/favicon.svg" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Angelo Maia</a>
+      <a class="navbar-brand" href="#">
+        <span class="fw-bold">Angelo</span> Maia
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -34,29 +38,33 @@
     </div>
   </nav>
 
-  <section id="about" class="bg-light py-6">
+  <section id="about" class="py-6">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-md-1">
-        </div>
+        <div class="col-md-1"></div>
         <div class="col-md-7">
           <h5 class="text-end">
-            Hello! My name is Angelo Maia<br><br>
+            Hello! I'm Angelo Maia<br>
+            <span class="text-secondary">Software Developer</span>
           </h5>
           <p class="text-end">
-            I am a Software Developer currently working with <strong>Ruby on Rails</strong> in full-stack applications
+            With a strong focus on <strong>Ruby on Rails</strong>, programming best practices, and improving user experience, 
+            I build robust and scalable solutions.
           </p>
+          <div class="text-end mt-4">
+            <a href="#contact" class="btn btn-primary btn-lg">Get in Touch</a>
+          </div>
         </div>
         <div class="col-md-3">
-          <img src="assets/me.png" alt="Angelo Maia" class="img-fluid rounded-circle">
+          <img src="assets/me.png" alt="Angelo Maia" class="img-fluid profile-picture">
         </div>
       </div>
     </div>
   </section>
 
-  <section id="skills" class="bg-white py-5">
+  <section id="skills" class="py-5">
     <div class="container">
-      <h2 class="text-center mb-4">Tools</h2>
+      <h2 class="text-center mb-5">Tools & Technologies</h2>
       <div class="row justify-content-center text-center">
         <div class="col-md-2 col-4 mb-4">
           <img src="assets/ruby.png" alt="Ruby" class="tool-icon">
@@ -70,94 +78,101 @@
       </div>
     </div>
   </section>
-  
 
-  <section id="projects" class="bg-light py-5">
+  <section id="projects" class="py-5">
     <div class="container">
-      <h2 class="text-center mb-4">Projects</h2>
-
+      <h2 class="text-center mb-5">Featured Projects</h2>
       <div class="row">
         <div class="col-md-6 mb-4">
-          <a href="https://github.com/angelomaia/cade-buffet" target="_blank">
-            <div class="card h-100">
-              <img src="assets/cadebuffet.png" class="card-img-top" alt="Project 1">
-            </a>
+          <div class="card h-100">
+            <img src="assets/cadebuffet.png" class="card-img-top" alt="CadêBuffet?">
             <div class="card-body">
               <h5 class="card-title">CadêBuffet?</h5>
-              <p class="card-text">Developed during the individual phase of TreinaDev by
-                Campus Code, CadêBuffet is a web application designed to connect potential clients with
-                companies that offer buffet services. The system includes several features, such as
-                company and user registration, listing and creation of buffets and event types, as well as a
-                scheduling system with pricing, chat functionality, and customer reviews. 
-                <br><br>
-                It was built
-                using Ruby on Rails, Bootstrap, and JavaScript, following Test-Driven Development
-                practices and automated testing with RSpec and Capybara.</p>
+              <p class="card-text">A comprehensive web application connecting clients with buffet service providers. Features include company and user registration, buffet listings, event scheduling, chat functionality, and review system.</p>
+              <div class="mt-3">
+                <span class="badge bg-primary me-2">Ruby on Rails</span>
+                <span class="badge bg-primary me-2">Bootstrap</span>
+                <span class="badge bg-primary">JavaScript</span>
+              </div>
+              <div class="mt-3">
+                <a href="https://github.com/angelomaia/cade-buffet" target="_blank" class="btn btn-outline-primary">
+                  <i class="bi bi-github me-2"></i>View Project
+                </a>
+                <a href="https://www.youtube.com/watch?v=n_Rs3-IfvZE" target="_blank" class="btn btn-outline-primary ms-2">
+                  <i class="bi bi-youtube me-2"></i>YouTube Overview
+                </a>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-md-6 mb-4">
-          <a href="https://github.com/TreinaDev/pague-aluguel" target="_blank">
-            <div class="card h-100">
-              <img src="assets/paguealuguel.png" class="card-img-top" alt="Project 2">
-            </a>
+          <div class="card h-100">
+            <img src="assets/paguealuguel.png" class="card-img-top" alt="PagueAluguel">
             <div class="card-body">
               <h5 class="card-title">PagueAluguel</h5>
-              <p class="card-text">Developed during the Team Experience phase of
-                TreinaDev by Campus Code, PagueAluguel is one of two applications that together form a
-                connected system via API integration. It consumes data from the CondoMinions application
-                and functions as a payment management system for condominiums. Features include the
-                registration of shared utility bills, condominium fees, one-time charges, and rental
-                agreements—ultimately generating invoices for residents of the managed buildings. 
-                <br><br>
-                Built with Ruby on Rails, Bootstrap, Stimulus.js, JavaScript, RuboCop, SimpleCov, and
-                asynchronous background jobs. The project followed Test-Driven Development practices
-                and includes automated tests using RSpec and Capybara.</p>
+              <p class="card-text">A payment management system for condominiums, integrated with CondoMinions via API. Handles utility bills, condominium fees, and rental agreements with automated invoice generation.</p>
+              <div class="mt-3">
+                <span class="badge bg-primary me-2">Ruby on Rails</span>
+                <span class="badge bg-primary me-2">Stimulus.js</span>
+                <span class="badge bg-primary">API Integration</span>
+              </div>
+              <div class="mt-3">
+                <a href="https://github.com/TreinaDev/pague-aluguel" target="_blank" class="btn btn-outline-primary">
+                  <i class="bi bi-github me-2"></i>View Project
+                </a>
+                <a href="https://www.youtube.com/watch?v=GCwDoRv4KUo" target="_blank" class="btn btn-outline-primary ms-2">
+                  <i class="bi bi-youtube me-2"></i>YouTube Overview
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-
       <div class="row justify-content-center">
         <div class="col-md-6 mb-4">
-          <a href="https://github.com/angelomaia/rebase-labs" target="_blank">
-            <div class="card h-100">
-              <img src="assets/relabs.png" class="card-img-top" alt="Project 3">
-          </a>
+          <div class="card h-100">
+            <img src="assets/relabs.png" class="card-img-top" alt="Rebase Labs">
             <div class="card-body">
               <h5 class="card-title">Rebase Labs</h5>
-              <p class="card-text">Developed during the job interview process for Rebase, this project
-                consisted in a lightweight Ruby application using Sinatra. It is a dockerized system with
-                back-end, front-end, and database services. The app is built to handle data related to
-                patients, doctors, and exam results. It has an endpoint to receive the upload of csv files,
-                and a structured interface to show the exam results with pagination and search results by
-                exam token. The upload system has validation of file format and data structure. 
-                <br><br>
-                The overall aim of this project was to test whether the applicants had the ability to adapt to an
-                unknown framework and do the job within a limited timeframe.</p>
+              <p class="card-text">A lightweight Ruby application using Sinatra for managing patient, doctor, and exam data. Features CSV file upload with background jobs, structured interface, and search functionality with pagination.</p>
+              <div class="mt-3">
+                <span class="badge bg-primary me-2">Ruby</span>
+                <span class="badge bg-primary me-2">Sinatra</span>
+                <span class="badge bg-primary me-2">Docker</span>
+                <span class="badge bg-primary">Sidekiq</span>
+              </div>
+              <div class="mt-3">
+                <a href="https://github.com/angelomaia/rebase-labs" target="_blank" class="btn btn-outline-primary">
+                  <i class="bi bi-github me-2"></i>View Project
+                </a>
+                <a href="https://www.youtube.com/watch?v=bVPZogvhA1w" target="_blank" class="btn btn-outline-primary ms-2">
+                  <i class="bi bi-youtube me-2"></i>YouTube Overview
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-  
     </div>
   </section>
-  
 
-  <section id="contact" class="bg-white">
+  <section id="contact" class="py-5">
     <div class="container">
-      <h2 class="text-center">Contact</h2>
-      <h6 class="text-center">
-        <br>
-        request.angelo@gmail.com
+      <h2 class="text-center mb-4">Let's Connect</h2>
+      <h6 class="text-center mb-4">
+        I'm always open to new opportunities and collaborations
       </h6>
-      <div class="text-center">
-        <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="https://www.linkedin.com/in/angelo-jamil-maia/" role="button">
-          <img src="icons/linkedin.svg" alt="LinkedIn" style="width: 32px; height: 32px">
+      <div class="text-center mb-4">
+        <a href="mailto:request.angelo@gmail.com" class="btn btn-light btn-lg">
+          <i class="bi bi-envelope me-2"></i>request.angelo@gmail.com
         </a>
-    
-        <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="https://github.com/angelomaia" role="button">
-          <img src="icons/github.svg" alt="GitHub" style="width: 32px; height: 32px">
+      </div>
+      <div class="text-center">
+        <a href="https://www.linkedin.com/in/angelo-jamil-maia/" target="_blank" class="btn btn-floating">
+          <img src="icons/linkedin.svg" alt="LinkedIn" style="width: 24px; height: 24px">
+        </a>
+        <a href="https://github.com/angelomaia" target="_blank" class="btn btn-floating">
+          <img src="icons/github.svg" alt="GitHub" style="width: 24px; height: 24px">
         </a>
       </div>
     </div>
